@@ -1,4 +1,6 @@
-FROM ubuntu:latest
+ARG UBUNTU_VER=latest
+
+FROM ubuntu:${UBUNTU_VER}
 
 # Update and install sudo package
 RUN apt-get update && apt-get install -y sudo
